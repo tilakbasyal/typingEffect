@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+	<title>TypeWriter Effect</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+	<nav class="navbar container" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="https://bulma.io">
+				<img src="images/logo.png" width="112" height="28">
+			</a>
+
+			<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarOpener">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div id="navbarOpener" class="navbar-menu">
+			<div class="navbar-end">
+				<div class="navbar-item">
+					<a class="navbar-item">Home</a>
+					<a class="navbar-item">Profile</a>
+					<a class="navbar-item">Works</a>
+					<a class="navbar-item">Gallery</a>
+					<a class="navbar-item">Contact Us</a>					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="hero is-info is-large">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title">We Provide Various Services like:</h1>
+					<div  id="typed-strings">
+						<p>Web Design</p>
+						<p>Web Hosting</p>
+						<p>Web Development</p>
+						<p>App Development </p>	
+					</div>
+					<span class="subtitle" id="typed"></span>
+					<div>
+						<a class="button is-rounded">Click for more info</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="columns">
+			<div class="column card">
+				<div class="card-image">
+					<figure class="image">
+						<img src="images/card1.jpg">						
+					</figure>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit totam facere temporibus qui esse molestias suscipit dolorem doloremque at numquam laborum magnam, animi provident officia asperiores officiis id, quia quam.</p>
+				</div>
+			</div>
+
+			<div class="column card">
+				<div class="card-image">
+					<figure class="image">
+						<img src="images/card2.jpg">						
+					</figure>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit totam facere temporibus qui esse molestias suscipit dolorem doloremque at numquam laborum magnam, animi provident officia asperiores officiis id, quia quam.</p>
+				</div>
+			</div>
+
+			<div class="column card">
+				<div class="card-image">
+					<figure class="image">
+						<img src="images/card3.jpg">						
+					</figure>
+				</div>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit totam facere temporibus qui esse molestias suscipit dolorem doloremque at numquam laborum magnam, animi provident officia asperiores officiis id, quia quam.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer></footer>
+
+
+	<script type="text/javascript" src="js/typed.js"></script>
+	<script type="text/javascript">
+		var typed = new Typed('#typed', {
+			stringsElement: '#typed-strings',
+			smartBackspace: true,
+			typeSpeed: 50,
+			backSpeed: 50,
+			loop: true
+		});
+	</script>
+
+</body>
+</html>
